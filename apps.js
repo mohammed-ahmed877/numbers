@@ -163,17 +163,23 @@ console.log(num());
 ;
 
 // 5. Random Integer (0–9) Generate a random whole number between 0 and 9.
+ console.log(Math.floor(Math.random()*10));
+ 
 
 
+// 6. Random Integer (1–100) Generate a random integer between 1 and 100.
+console.log(Math.floor(Math.random()*100)+1 );
 
-// 6. Random Integer (1–100)
-// Generate a random integer between 1 and 100.
-// 7. Convert String to Integer
-// Use parseInt() to convert the string "42" into a number.
-// 8. Convert String to Float
-// Use parseFloat() to convert "3.14159" into a floating point number.
-// 9. Round User Input
-// Take a number from a form input, round it, and display the result on the page.
+
+// 7. Convert String to Integer Use parseInt() to convert the string "42" into a number.
+console.log(parseInt("42"));
+
+// 8. Convert String to Float Use parseFloat() to convert "3.14159" into a floating point number.
+console.log(parseFloat("3.14159"));
+
+// 9. Round User Input Take a number from a  input, round it, and display the result on the page.
+const num= document.getElementsByName("h1");
+
 // 10. Dice Simulator
 // Simulate a 6-sided dice roll (returns a number between 1 and 6).
 // 11. Temperature Rounding
