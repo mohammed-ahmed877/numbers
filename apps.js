@@ -178,22 +178,62 @@ console.log(parseInt("42"));
 console.log(parseFloat("3.14159"));
 
 // 9. Round User Input Take a number from a  input, round it, and display the result on the page.
-const num= document.getElementsByName("h1");
+function btn() {
+ let num = document.querySelector("#num");
+ let num1 = document.querySelector("#num1");
+let value = parseFloat(num.value);
+ let result = Math.round(value)
+num1.innerHTML= result
 
-// 10. Dice Simulator
-// Simulate a 6-sided dice roll (returns a number between 1 and 6).
-// 11. Temperature Rounding
-// Round a temperature value (e.g., 36.6) to the nearest integer using Math.round().
 
-// 12. Ceil Shopping Price
-// If the product price is $9.25, use Math.ceil() to charge the user $10.
-// 13. Parse and Add
-// Convert two string numbers like "10" and "5.5" using parseInt() and
-// parseFloat() and add them.
-// 14. Random Even Number (2–20)
-// Generate a random even number between 2 and 20.
-// 15. Check if Parsed Value is a Number
-// Write a function that checks if parseInt(input) is a valid number (not NaN).
+}
+
+// 10. Dice Simulato Simulate a 6-sided dice roll (returns a number between 1 and 6).
+function btn() {
+    let result = Math.floor(Math.random()*6 )+1;
+    console.log(result);
+    
+}
+btn();
+// 11. Temperature Rounding Round a temperature value (e.g., 36.6) to the nearest integer using Math.round().
+console.log(Math.round(36.6));
+
+
+// 12. Ceil Shopping Price If the product price is $9.25, use Math.ceil() to charge the user $10.
+console.log(Math.ceil( 9.25));
+
+
+
+
+
+
+// 13. Parse and Add Convert two string numbers like "10" and "5.5" using parseInt() and  parseFloat() and add them.
+let num1 = "10";
+let num2 = "5.5";
+let sum = parseInt(num1) + parseFloat(num2);
+console.log(sum);
+
+
+
+
+
+
+
+// 14. Random Even Number (2–20) Generate a random even number between 2 and 20.
+
+
+function btn(){
+console.log(Math.floor(Math.random() * 10) * 2+2 );
+}
+btn();
+
+
+
+// 15. Check if Parsed Value is a Number Write a function that checks if parseInt(input) is a valid number (not NaN).
+function num(params) {
+let num = parseInt(params);    
+}
+
 // 16. Round All Prices in Array
 // Given an array of prices with decimals, return a new array with all prices rounded.
 // 17. Simulate Coin Toss
