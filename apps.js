@@ -230,17 +230,60 @@ btn();
 
 
 // 15. Check if Parsed Value is a Number Write a function that checks if parseInt(input) is a valid number (not NaN).
-function num(params) {
-let num = parseInt(params);    
+function num() {
+// let num = parseInt(prompt("Enter a number:"));    
+if (isNaN(num)) {
+    console.log("Invalid number");
+    
+} else {
+    console.log("Valid number: " + num);
 }
+}
+console.log(num());
 
-// 16. Round All Prices in Array
-// Given an array of prices with decimals, return a new array with all prices rounded.
-// 17. Simulate Coin Toss
-// Use Math.random() to simulate a coin toss that returns "Heads" or "Tails".
-// 18. Random Integer within Range (Min–Max)
-// Create a function that returns a random integer between any two numbers (inclusive).
-// 19. Extract Number from Text
-// Use parseFloat() to extract the number from "Total: 45.90 USD".
-// 20. Round to Nearest 0.5
-// Given a decimal number, round it to the nearest 0.5 (e.g., 4.3 → 4.5, 4.1 → 4.0).
+
+// 16. Round All Prices in Array Given an array of prices with decimals, return a new array with all prices rounded.
+let prices=[ 9.99, 14.54, 3.75, 6.80];
+let roundprices =[];
+for (let i = 0; i < prices.length; i++) {
+  roundprices.push(Math.round(prices[i]))  
+    
+}
+console.log(roundprices);
+
+
+// 17. Simulate Coin Toss Use Math.random() to simulate a coin toss that returns "Heads" or "Tails".
+function toss(){
+    let num = Math.random();
+    if (num <0.3) {
+        console.log("head");     
+        
+    } else {
+        console.log("tails");
+        
+    }
+}
+console.log(toss());
+
+// 18. Random Integer within Range (Min–Max) Create a function that returns a random integer between any two numbers (inclusive).
+function rannum() {
+let min = 1;
+let max = 10;
+
+  let randomnum= Math.floor(Math.random()*(max - min +1 ))+min;  
+  return randomnum ; 
+}
+console.log(rannum());
+ 
+// 19. Extract Number from Text Use parseFloat() to extract the number from "Total: 45.90 USD".
+let num5= "Total: 45.90 USD";
+console.log(parseFloat(num5.replace("Total: ", "")));
+
+
+
+// 20. Round to Nearest 0.5  Given a decimal number, round it to the nearest 0.5 (e.g., 4.3 → 4.5, 4.1 → 4.0).
+let num6 = 4.1;
+
+let result = Math.round(num6 * 2) / 2;
+
+console.log(result);
